@@ -5,5 +5,8 @@
 or set repote link as origin
 git remote add origin "https://github.com/sandeepajr/python_practice.git"
 5)git pull origin main or master
-6)
+6)create new file or modify 
+7)git add .
+8)git commit -m "comment"
+9)git push origin master
 
