@@ -1,0 +1,9 @@
+1) install GIT, create account on git hub  (or any git servers like git hub git lab or bitbucket )
+2)Create a local folder and git bash
+3)git init
+4)git clone https://github.com/sandeepajr/python_practice.git
+or set repote link as origin
+git remote add origin "https://github.com/sandeepajr/python_practice.git"
+5)git pull origin main or master
+6)
+
