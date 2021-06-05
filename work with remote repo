@@ -10,3 +10,61 @@ git remote add origin "https://github.com/sandeepajr/python_practice.git"
 8)git commit -m "comment"
 9)git push origin master
 
+
+Createing branch and working
+
+1)git branch -> gived existing branches in local
+2)git brancg [name]-> create new branch with the name mentioned
+3)git checkout [name] -> change to that branch name
+4)modify necessary files, add and commit
+5) git push origin newbranch-> push this branch to remote
+6)raise merge req
+7)Merge from git hub
+ 
+ or merge using command
+ 
+ 8)go to brach where u want to merge
+ and git merge [ranch you want to merge]
+
+
+ADD via ssh: 
+
+1)for that we need to generate public key and add that key in github acc
+2)generate ssh public key  "ssh-keygen"
+
+    $ ssh-keygen
+    Generating public/private rsa key pair.
+    Enter file in which to save the key (/c/Users/Deepu/.ssh/id_rsa):
+    Enter passphrase (empty for no passphrase):
+    Enter same passphrase again:
+    Your identification has been saved in /c/Users/Deepu/.ssh/id_rsa
+    Your public key has been saved in /c/Users/Deepu/.ssh/id_rsa.pub
+    The key fingerprint is:
+    SHA256:uCz5RF36zZ5xhWM37xNpawQj9S9Vflo+IxhlKtYuhWU Deepu@DESKTOP-JEI6VGG
+    The key's randomart image is:
+    +---[RSA 3072]----+
+    |                 |
+    |           E +  .|
+    |          * = ...|
+    |       o * * o o=|
+    |      o S + + ***|
+    |     + . o = oo@=|
+    |    o +   o + =.*|
+    |     +     . + = |
+    |      .     o . o|
+    +----[SHA256]-----+
+
+
+3)Deepu@DESKTOP-JEI6VGG MINGW64 ~/PycharmProjects/pythonpractice_git (master)
+$ cat /c/Users/Deepu/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCmZZB6EquRr1fJdoLpvwBqC2ORdd6ZcfaN6xp/tTlOyGvIlJAv07/vXLUeCBG7/gxydbaiewk9Ff3k7hSUEaSSj0UPQNexYphJKTuJISUcefzqdsW9F1tk8O/s99iigvvfJkLPsoku9PX3XYZ7bQdQraPxlaD+LDjMId4XS2hpK1uF2Tph6rwUJh//Sz3NZYdB6DfSF+1LFwzDfxM86DsKLRj/ti8VBC1Zqp7GbrbxFSCAoRHn3ytJnY5z67DbdoD793edtSPdGh6F9v271WlSnwlmdAGL4uCpCTbzlvxOKUQnyNgXIesTzrfpYtBpM4uKr7c7CK1DQUke9rc2zYegJNeGFy+nuYe4gUg9W+Phw4E/ruTmtfZX68NM2QQn0H1WAKM9f+VsP6aHf36QSHfJNTe0Ft/D+aJdEnFhU/48VNQIfCEjerWSmx2oiknKrU4aJf6WiZcd5bDq31256I0+Hi9UfOwiteFU5ObLPJkaHXWM1ib4aDY5ptJSGle/1WM= Deepu@DESKTOP-JEI6VGG
+
+4)github->profile->settings->ssh ->addnew ssh key
+5)authenticate the key 
+Deepu@DESKTOP-JEI6VGG MINGW64 ~/PycharmProjects/pythonpractice_git (master)
+$ ssh -T git@github.com
+Hi sandeepajr! You've successfully authenticated, but GitHub does not provide shell access.
+
+
+Revert to old commit: 
+git checkout [commit id] [files]
